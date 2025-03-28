@@ -1,0 +1,147 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: end;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.no-gap{
+    gap:0;
+}
+
+.bottom-border {
+  border-bottom: 1px solid white;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.todo-wrapper {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-header {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.todo-form {
+  background-color: #343434;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.todo-title {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.todo-input {
+  padding: 10px 10px;
+  width: 20rem;
+}
+
+.todo-input:focus{
+    outline: none;
+}
+
+.todo-button-add {
+  color: white;
+  background-color: green;
+  border: none;
+  padding: 10px 20px;
+  height: fit-content;
+  font-weight: bold;
+}
+
+.todo-button-add:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.todo-button-tag.active{
+    background-color: green;
+}
+
+.todo-button-tag {
+color: white;
+  background-color: grey;
+  border: none;
+  padding: 10px 20px;
+  height: fit-content;
+}
+
+.todo-button-tag:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.todo-list{
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    height: 15rem;
+    overflow: scroll;
+}
+
+.todo-list::-webkit-scrollbar{
+    display: none;
+}
+
+.toto-item{
+    background-color: #3E3E3E;
+    box-shadow: 1px 1px 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.todo-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.todo-item-title{
+    color:#1AD97C;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.to-do-item-content{
+    color: #ccc;
+    transition: 0.3s ease;
+}
+
+.todo-icon{
+    display: flex;
+    gap:1rem;
+}
+
+.todo-icon .icon:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.todo-icon svg{
+    fill:white;
+
+}
+
